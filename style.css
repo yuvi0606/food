@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    background-color: rgb(239, 236, 236);
+    box-shadow: 2px 2px 4px rgb(107, 107, 125);
+    position: fixed;
+    z-index: 2;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+    display: flex;
+}
+.logo h1 {
+    font-size: 1.5rem;
+    color: rgb(223, 205, 5);
+    text-shadow: 1px 2px 2px rgb(77, 6, 6);
+    padding: 10px;
+}
+.navico {
+    width: 15%;
+   
+}
+.navico i {
+    color: rgb(94, 63, 7);
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+.navico ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.navico ul li {
+    list-style: none;
+}
+.navico ul li a {
+    text-decoration: none;
+    color: black;
+}
+.navico i span {
+    font-size: 0.7rem;
+    display: none;
+}
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    padding: 100px;
+    row-gap: 25px;
+    column-gap: 40px;
+    padding-top: 130px;
+}
+.card img {
+    height: 250px;
+    
+}
+.card {
+    box-shadow: 2px 2px 2px grey;
+}
+
+/* Responsive for Tab */
+@media screen and (max-width:992px) {
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 50px;
+        row-gap: 25px;
+        column-gap: 30px;
+    }
+    .grid {
+        padding-top: 120px;
+    }
+    
+}
+/* Responsive for Mobiles */
+@media screen and (max-width:576px) {
+    .navico #a {
+        display: none;
+    }
+    .navico #b {
+        display: none;
+    }
+    nav {
+        padding-right: 30px;
+    }
+    .navico {
+        width: 15%;
+        padding-top: 5px;
+       
+    }
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        row-gap: 25px;
+        column-gap: 30px;
+        padding-top: 100px;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .navico i span {
+        font-size: 0.6rem;
+        
+    }
+    .navico i {
+        font-size: 1rem;
+    }
+    nav {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+   
+}
